@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: audiodb
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: audiodb
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

@@ -1,0 +1,43 @@
+# Virtual Environment
+venv/
+
+# Environment Variables (IMPORTANT)
+.env
+.env.*
+
+# Uploads (audio files)
+uploads/
+*.wav
+*.mp3
+*.m4a
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Pytest
+.pytest_cache/
+
+# Build / Packaging
+*.egg-info/
+dist/
+build/
+
+# Alembic
+.alembic_history
+
+# Logs
+*.log
+logs/
+
+.cache/
+.cache/huggingface/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
